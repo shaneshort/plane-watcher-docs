@@ -117,7 +117,7 @@ After firing, the detector enters a **holdoff period** of 2,240 samples (140 us)
 
 When the preamble detector fires, it needs to hand the message off to one of 8 parallel decoder slots. The assignment uses a **first-free strategy**: scan slots 0 through 7 in order and assign to the first one that isn't busy.
 
-Each decoder takes up to 140 us to process a message (less for short frames -- see [Decoding and Error Correction](05-Decoding-and-Error-Correction)). With 8 parallel decoders, the system can handle up to 8 overlapping transmissions. Near busy airports, this matters -- aircraft on approach are often transmitting simultaneously, and their messages arrive interleaved at the receiver.
+Each decoder takes up to 140 us to process a message (less for short frames -- see [Decoding and Error Correction](05-Decoding-and-Error-Correction.md)). With 8 parallel decoders, the system can handle up to 8 overlapping transmissions. Near busy airports, this matters -- aircraft on approach are often transmitting simultaneously, and their messages arrive interleaved at the receiver.
 
 If all 8 decoders are busy when a new preamble fires, the detection is dropped. A hardware counter tracks these events for diagnostics.
 
@@ -135,4 +135,4 @@ There's one more subtlety: if two preambles fire close together, the stronger on
 
 ---
 
-**Previous:** [Signal Processing Front-End](03-Signal-Processing-Front-End) | **Next:** [Decoding and Error Correction](05-Decoding-and-Error-Correction)
+**Previous:** [Signal Processing Front-End](03-Signal-Processing-Front-End.md) | **Next:** [Decoding and Error Correction](05-Decoding-and-Error-Correction.md)

@@ -109,4 +109,4 @@ The FPGA has none of these layers. The preamble detector latches the counter in 
 
 ---
 
-**Previous:** [Decoding and Error Correction](05-Decoding-and-Error-Correction) | **Next:** [From FPGA to Network](07-From-FPGA-to-Network)
+**Previous:** [Decoding and Error Correction](05-Decoding-and-Error-Correction.md) | **Next:** [From FPGA to Network](07-From-FPGA-to-Network.md)

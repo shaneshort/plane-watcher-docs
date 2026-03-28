@@ -16,13 +16,13 @@ This documentation walks through every stage of the receiver, from the radio sig
 
 | # | Page | You'll understand... |
 |---|------|---------------------|
-| 1 | [What is ADS-B?](01-What-is-ADS-B) | Why planes broadcast, what the signals contain, why we built this |
-| 2 | [System Overview](02-System-Overview) | The hardware, how FPGA and Linux split the work |
-| 3 | [Signal Processing Front-End](03-Signal-Processing-Front-End) | How raw radio samples become a power signal |
-| 4 | [Preamble Detection](04-Preamble-Detection) | How we find messages hidden in noise |
-| 5 | [Decoding and Error Correction](05-Decoding-and-Error-Correction) | How bits are extracted and errors are fixed |
-| 6 | [Timestamps and MLAT](06-Timestamps-and-MLAT) | How we achieve nanosecond timing for multilateration |
-| 7 | [From FPGA to Network](07-From-FPGA-to-Network) | How decoded messages reach your flight tracker |
+| 1 | [What is ADS-B?](01-What-is-ADS-B.md) | Why planes broadcast, what the signals contain, why we built this |
+| 2 | [System Overview](02-System-Overview.md) | The hardware, how FPGA and Linux split the work |
+| 3 | [Signal Processing Front-End](03-Signal-Processing-Front-End.md) | How raw radio samples become a power signal |
+| 4 | [Preamble Detection](04-Preamble-Detection.md) | How we find messages hidden in noise |
+| 5 | [Decoding and Error Correction](05-Decoding-and-Error-Correction.md) | How bits are extracted and errors are fixed |
+| 6 | [Timestamps and MLAT](06-Timestamps-and-MLAT.md) | How we achieve nanosecond timing for multilateration |
+| 7 | [From FPGA to Network](07-From-FPGA-to-Network.md) | How decoded messages reach your flight tracker |
 
 ---
 

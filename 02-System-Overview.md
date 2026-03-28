@@ -98,4 +98,4 @@ The PPS (pulse-per-second) signal from the GNSS module is synchronised into this
 
 ---
 
-**Previous:** [<-- What is ADS-B?](01-What-is-ADS-B) | **Next:** [Signal Processing Front-End -->](03-Signal-Processing-Front-End)
+**Previous:** [<-- What is ADS-B?](01-What-is-ADS-B.md) | **Next:** [Signal Processing Front-End -->](03-Signal-Processing-Front-End.md)

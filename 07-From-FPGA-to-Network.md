@@ -126,7 +126,7 @@ Beast binary is the standard wire format for distributing Mode-S messages betwee
 
 **Byte stuffing:** If the byte `0x1A` appears anywhere in the payload (type, timestamp, signal, or message fields), it is doubled to `0x1A 0x1A`. The leading escape byte is never doubled. This ensures the receiver can unambiguously find frame boundaries by looking for a lone `0x1A`.
 
-The timestamp encoding depends on the mode. In **standard mode**, the 48-bit field is the FPGA counter scaled from 16 MHz to 12 MHz (`counter * 3 / 4`). In **Radarcape mode**, the field encodes structured UTC time: a GPS-sync flag, seconds since midnight, and a 30-bit nanosecond fraction derived from the FPGA counter's offset from the last PPS edge. See [Timestamps and MLAT](06-Timestamps-and-MLAT) for details.
+The timestamp encoding depends on the mode. In **standard mode**, the 48-bit field is the FPGA counter scaled from 16 MHz to 12 MHz (`counter * 3 / 4`). In **Radarcape mode**, the field encodes structured UTC time: a GPS-sync flag, seconds since midnight, and a 30-bit nanosecond fraction derived from the FPGA counter's offset from the last PPS edge. See [Timestamps and MLAT](06-Timestamps-and-MLAT.md) for details.
 
 ---
 
@@ -145,4 +145,4 @@ The MLAT path is where the FPGA's timing precision pays off. mlat-client reads t
 
 ---
 
-**Previous:** [Timestamps and MLAT](06-Timestamps-and-MLAT) | **Home:** [Back to index](Home)
+**Previous:** [Timestamps and MLAT](06-Timestamps-and-MLAT.md) | **Home:** [Back to index](README.md)

@@ -123,4 +123,4 @@ The next page explains how the hardware and software sides work together.
 
 ---
 
-**Next:** [System Overview -->](02-System-Overview)
+**Next:** [System Overview -->](02-System-Overview.md)

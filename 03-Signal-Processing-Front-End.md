@@ -122,4 +122,4 @@ The edge detector introduces a small pipeline delay (equal to the buffer length)
 
 ---
 
-**Previous:** [<-- System Overview](02-System-Overview) | **Next:** [Preamble Detection -->](04-Preamble-Detection)
+**Previous:** [<-- System Overview](02-System-Overview.md) | **Next:** [Preamble Detection -->](04-Preamble-Detection.md)

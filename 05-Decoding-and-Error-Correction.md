@@ -139,4 +139,4 @@ The entire process, from preamble detection to message output, takes between 60 
 
 ---
 
-**Previous:** [Preamble Detection](04-Preamble-Detection) | **Next:** [Timestamps and MLAT](06-Timestamps-and-MLAT)
+**Previous:** [Preamble Detection](04-Preamble-Detection.md) | **Next:** [Timestamps and MLAT](06-Timestamps-and-MLAT.md)
