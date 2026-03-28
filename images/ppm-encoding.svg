@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <rect width="600" height="200" fill="#262626"/>
+
+  <!-- Divider -->
+  <line x1="300" y1="10" x2="300" y2="190" stroke="#404040" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- LEFT PANEL: Bit = 1 -->
+  <text x="150" y="22" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#A3E835">Bit = 1</text>
+
+  <!-- Waveform: high chip then low chip -->
+  <line x1="30" y1="105" x2="30" y2="45" stroke="#A3E835" stroke-width="1.5" opacity="0.4"/>
+  <line x1="30" y1="45" x2="150" y2="45" stroke="#A3E835" stroke-width="2"/>
+  <line x1="150" y1="45" x2="150" y2="105" stroke="#A3E835" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="105" x2="270" y2="105" stroke="#A3E835" stroke-width="2"/>
+
+  <!-- Chip labels -->
+  <text x="90" y="38" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">high chip</text>
+  <text x="210" y="120" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">low chip</text>
+
+  <!-- 8 sample dots per chip - high chip -->
+  <circle cx="40" cy="45" r="3" fill="#A3E835" opacity="0.5"/>
+  <circle cx="55" cy="45" r="3" fill="#A3E835" opacity="0.5"/>
+  <circle cx="70" cy="45" r="4" fill="#A3E835"/>
+  <circle cx="85" cy="45" r="4" fill="#A3E835"/>
+  <circle cx="100" cy="45" r="4" fill="#A3E835"/>
+  <circle cx="115" cy="45" r="4" fill="#A3E835"/>
+  <circle cx="130" cy="45" r="3" fill="#A3E835" opacity="0.5"/>
+  <circle cx="145" cy="45" r="3" fill="#A3E835" opacity="0.5"/>
+
+  <!-- 8 sample dots per chip - low chip -->
+  <circle cx="160" cy="105" r="3" fill="#A3E835" opacity="0.5"/>
+  <circle cx="175" cy="105" r="3" fill="#A3E835" opacity="0.5"/>
+  <circle cx="190" cy="105" r="4" fill="#A3E835"/>
+  <circle cx="205" cy="105" r="4" fill="#A3E835"/>
+  <circle cx="220" cy="105" r="4" fill="#A3E835"/>
+  <circle cx="235" cy="105" r="4" fill="#A3E835"/>
+  <circle cx="250" cy="105" r="3" fill="#A3E835" opacity="0.5"/>
+  <circle cx="265" cy="105" r="3" fill="#A3E835" opacity="0.5"/>
+
+  <!-- Scores -->
+  <text x="90" y="140" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">score&#8321; = &#931; high</text>
+  <text x="210" y="140" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">score&#8320; = &#931; low</text>
+
+  <!-- Verdict -->
+  <text x="150" y="164" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#FBEB24">score&#8321; &gt; score&#8320; &#8594; bit is 1</text>
+
+  <!-- Edge dim annotation -->
+  <text x="150" y="183" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0" opacity="0.5">dim dots = edge samples (excluded from sum)</text>
+
+  <!-- RIGHT PANEL: Bit = 0 -->
+  <text x="450" y="22" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FBEB24">Bit = 0</text>
+
+  <!-- Waveform: low chip then high chip -->
+  <line x1="330" y1="45" x2="330" y2="105" stroke="#FBEB24" stroke-width="1.5" opacity="0.4"/>
+  <line x1="330" y1="105" x2="450" y2="105" stroke="#FBEB24" stroke-width="2"/>
+  <line x1="450" y1="105" x2="450" y2="45" stroke="#FBEB24" stroke-width="1.5" opacity="0.4"/>
+  <line x1="450" y1="45" x2="570" y2="45" stroke="#FBEB24" stroke-width="2"/>
+
+  <!-- Chip labels -->
+  <text x="390" y="120" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">low chip</text>
+  <text x="510" y="38" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">high chip</text>
+
+  <!-- 8 sample dots per chip - low chip -->
+  <circle cx="340" cy="105" r="3" fill="#FBEB24" opacity="0.5"/>
+  <circle cx="355" cy="105" r="3" fill="#FBEB24" opacity="0.5"/>
+  <circle cx="370" cy="105" r="4" fill="#FBEB24"/>
+  <circle cx="385" cy="105" r="4" fill="#FBEB24"/>
+  <circle cx="400" cy="105" r="4" fill="#FBEB24"/>
+  <circle cx="415" cy="105" r="4" fill="#FBEB24"/>
+  <circle cx="430" cy="105" r="3" fill="#FBEB24" opacity="0.5"/>
+  <circle cx="445" cy="105" r="3" fill="#FBEB24" opacity="0.5"/>
+
+  <!-- 8 sample dots per chip - high chip -->
+  <circle cx="460" cy="45" r="3" fill="#FBEB24" opacity="0.5"/>
+  <circle cx="475" cy="45" r="3" fill="#FBEB24" opacity="0.5"/>
+  <circle cx="490" cy="45" r="4" fill="#FBEB24"/>
+  <circle cx="505" cy="45" r="4" fill="#FBEB24"/>
+  <circle cx="520" cy="45" r="4" fill="#FBEB24"/>
+  <circle cx="535" cy="45" r="4" fill="#FBEB24"/>
+  <circle cx="550" cy="45" r="3" fill="#FBEB24" opacity="0.5"/>
+  <circle cx="565" cy="45" r="3" fill="#FBEB24" opacity="0.5"/>
+
+  <!-- Scores -->
+  <text x="390" y="140" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">score&#8320; = &#931; low</text>
+  <text x="510" y="140" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">score&#8321; = &#931; high</text>
+
+  <!-- Verdict -->
+  <text x="450" y="164" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#FBEB24">score&#8320; &gt; score&#8321; &#8594; bit is 0</text>
+
+  <text x="450" y="183" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0" opacity="0.5">dim dots = edge samples (excluded from sum)</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250">
+  <rect width="600" height="250" fill="#262626"/>
+
+  <!-- Divider between rows -->
+  <line x1="20" y1="125" x2="580" y2="125" stroke="#404040" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- TOP ROW: Strong bit -->
+  <text x="20" y="22" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FDE6A0">Strong bit (high confidence)</text>
+
+  <!-- Clear [high, low] waveform -->
+  <line x1="30" y1="75" x2="30" y2="40" stroke="#FBEB24" stroke-width="1" opacity="0.4"/>
+  <line x1="30" y1="40" x2="130" y2="40" stroke="#FBEB24" stroke-width="2.5"/>
+  <line x1="130" y1="40" x2="130" y2="95" stroke="#FBEB24" stroke-width="1" opacity="0.4"/>
+  <line x1="130" y1="95" x2="230" y2="95" stroke="#FBEB24" stroke-width="2.5"/>
+
+  <!-- Labels -->
+  <text x="80" y="35" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">high</text>
+  <text x="180" y="110" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">low</text>
+
+  <!-- Difference bracket -->
+  <line x1="240" y1="40" x2="250" y2="40" stroke="#A3E835" stroke-width="1"/>
+  <line x1="240" y1="95" x2="250" y2="95" stroke="#A3E835" stroke-width="1"/>
+  <line x1="245" y1="40" x2="245" y2="95" stroke="#A3E835" stroke-width="1.5"/>
+  <polygon points="245,40 241,48 249,48" fill="#A3E835"/>
+  <polygon points="245,95 241,87 249,87" fill="#A3E835"/>
+  <text x="260" y="72" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#A3E835">big gap</text>
+
+  <!-- Bar graph for |BSD| -->
+  <rect x="340" y="38" width="120" height="22" rx="3" fill="#FBEB24" opacity="0.4" stroke="#FBEB24" stroke-width="1"/>
+  <text x="400" y="54" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FBEB24">|BSD| = 47</text>
+
+  <!-- Verdict -->
+  <text x="400" y="85" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FBEB24">BSD = +47 &#8212; definitely a '1'</text>
+
+  <!-- BOTTOM ROW: Weak bit -->
+  <text x="20" y="147" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FDE6A0">Weak bit (low confidence)</text>
+
+  <!-- Ambiguous waveform — both halves nearly equal -->
+  <line x1="30" y1="195" x2="30" y2="170" stroke="#FBEB24" stroke-width="1" opacity="0.4"/>
+  <line x1="30" y1="170" x2="130" y2="170" stroke="#FBEB24" stroke-width="2.5"/>
+  <line x1="130" y1="170" x2="130" y2="185" stroke="#FBEB24" stroke-width="1" opacity="0.4"/>
+  <line x1="130" y1="185" x2="230" y2="185" stroke="#FBEB24" stroke-width="2.5"/>
+
+  <!-- Labels -->
+  <text x="80" y="165" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">high-ish</text>
+  <text x="180" y="200" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">low-ish</text>
+
+  <!-- Small difference bracket -->
+  <line x1="240" y1="170" x2="250" y2="170" stroke="#FDE6A0" stroke-width="1" opacity="0.6"/>
+  <line x1="240" y1="185" x2="250" y2="185" stroke="#FDE6A0" stroke-width="1" opacity="0.6"/>
+  <line x1="245" y1="170" x2="245" y2="185" stroke="#FDE6A0" stroke-width="1.5" opacity="0.6"/>
+  <text x="262" y="181" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0" opacity="0.6">tiny gap</text>
+
+  <!-- Bar graph for small |BSD| -->
+  <rect x="340" y="168" width="18" height="22" rx="3" fill="#FDE6A0" opacity="0.3" stroke="#FDE6A0" stroke-width="1"/>
+  <text x="400" y="184" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">|BSD| = 3</text>
+
+  <!-- Verdict -->
+  <text x="400" y="212" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0" opacity="0.8">BSD = +3 &#8212; probably a '1' but uncertain</text>
+
+  <!-- Bottom annotation -->
+  <text x="300" y="240" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">These are the bits we try flipping during error correction</text>
+</svg>

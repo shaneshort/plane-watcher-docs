@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <rect width="600" height="300" fill="#262626"/>
+
+  <!-- Chip outline -->
+  <rect x="30" y="25" width="540" height="200" rx="6" fill="none" stroke="#FDE6A0" stroke-width="1.5" opacity="0.4"/>
+  <text x="300" y="18" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FDE6A0">Zynq-7020</text>
+
+  <!-- PL half (left) -->
+  <rect x="40" y="35" width="248" height="180" rx="5" fill="#525252" stroke="#FBEB24" stroke-width="1.8"/>
+  <text x="164" y="62" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FBEB24">Programmable Logic (PL)</text>
+  <line x1="60" y1="72" x2="268" y2="72" stroke="#FBEB24" stroke-width="0.5" opacity="0.3"/>
+  <text x="164" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">Custom digital circuits</text>
+  <text x="164" y="130" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">ADS-B decode pipeline</text>
+  <text x="164" y="160" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">16 MHz sample clock</text>
+  <text x="164" y="195" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FBEB24" opacity="0.6">8 parallel decoders in hardware</text>
+
+  <!-- PS half (right) -->
+  <rect x="312" y="35" width="248" height="180" rx="5" fill="#525252" stroke="#A3E835" stroke-width="1.8"/>
+  <text x="436" y="62" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#A3E835">Processing System (PS)</text>
+  <line x1="332" y1="72" x2="540" y2="72" stroke="#A3E835" stroke-width="0.5" opacity="0.3"/>
+  <text x="436" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">Dual ARM Cortex-A9</text>
+  <text x="436" y="130" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">Linux + Go applications</text>
+  <text x="436" y="160" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">100 MHz AXI clock</text>
+  <text x="436" y="195" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835" opacity="0.6">Beast TCP, networking, NTP</text>
+
+  <!-- AXI Bridge in center -->
+  <rect x="276" y="90" width="48" height="80" rx="4" fill="#404040" stroke="#FDE6A0" stroke-width="1.5"/>
+  <text x="300" y="125" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="bold" fill="#FDE6A0">AXI</text>
+  <text x="300" y="140" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="bold" fill="#FDE6A0">Bus</text>
+  <!-- Bidirectional arrows -->
+  <line x1="265" y1="120" x2="278" y2="120" stroke="#FBEB24" stroke-width="1.5"/>
+  <polygon points="265,117 258,120 265,123" fill="#FBEB24"/>
+  <line x1="322" y1="120" x2="335" y2="120" stroke="#A3E835" stroke-width="1.5"/>
+  <polygon points="335,117 342,120 335,123" fill="#A3E835"/>
+  <line x1="265" y1="140" x2="278" y2="140" stroke="#A3E835" stroke-width="1.5"/>
+  <polygon points="265,137 258,140 265,143" fill="#A3E835"/>
+  <line x1="322" y1="140" x2="335" y2="140" stroke="#FBEB24" stroke-width="1.5"/>
+  <polygon points="335,137 342,140 335,143" fill="#FBEB24"/>
+
+  <!-- Annotation below chip -->
+  <text x="300" y="258" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-style="italic" fill="#FDE6A0">Think of PL as a hardware accelerator, PS as the CPU running your application</text>
+</svg>

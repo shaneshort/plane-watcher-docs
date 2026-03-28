@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="340" viewBox="0 0 840 340">
+  <rect width="840" height="340" fill="#262626"/>
+
+  <!-- FPGA dashed region -->
+  <rect x="15" y="20" width="480" height="220" rx="8" fill="none" stroke="#FBEB24" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.5"/>
+  <text x="25" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FBEB24" opacity="0.7">FPGA (Programmable Logic)</text>
+
+  <!-- Linux dashed region -->
+  <rect x="510" y="20" width="315" height="220" rx="8" fill="none" stroke="#A3E835" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.5"/>
+  <text x="520" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#A3E835" opacity="0.7">Linux (Processing System)</text>
+
+  <!-- Antenna icon -->
+  <line x1="35" y1="70" x2="35" y2="100" stroke="#FBEB24" stroke-width="2"/>
+  <line x1="25" y1="70" x2="35" y2="82" stroke="#FBEB24" stroke-width="2"/>
+  <line x1="45" y1="70" x2="35" y2="82" stroke="#FBEB24" stroke-width="2"/>
+  <text x="35" y="118" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Antenna</text>
+
+  <!-- Arrow antenna to AD9363 -->
+  <line x1="52" y1="90" x2="65" y2="90" stroke="#FBEB24" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+
+  <!-- AD9363 box -->
+  <rect x="68" y="72" width="62" height="36" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.2"/>
+  <text x="99" y="94" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">AD9363</text>
+
+  <!-- Arrow -->
+  <line x1="133" y1="90" x2="148" y2="90" stroke="#FBEB24" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+
+  <!-- IQ→Power / Downsample -->
+  <rect x="151" y="68" width="72" height="44" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.2"/>
+  <text x="187" y="86" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">IQ&#8594;Power</text>
+  <text x="187" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Downsample</text>
+
+  <!-- Arrow -->
+  <line x1="226" y1="90" x2="239" y2="90" stroke="#FBEB24" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+
+  <!-- Edge Detect -->
+  <rect x="242" y="72" width="62" height="36" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.2"/>
+  <text x="273" y="88" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Edge</text>
+  <text x="273" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Detect</text>
+
+  <!-- Arrow -->
+  <line x1="307" y1="90" x2="320" y2="90" stroke="#FBEB24" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+
+  <!-- Preamble Det -->
+  <rect x="323" y="72" width="72" height="36" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.2"/>
+  <text x="359" y="88" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Preamble</text>
+  <text x="359" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Detect</text>
+
+  <!-- Arrow -->
+  <line x1="398" y1="90" x2="411" y2="90" stroke="#FBEB24" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+
+  <!-- Decoders x8 -->
+  <rect x="414" y="68" width="72" height="44" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.2"/>
+  <text x="450" y="86" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Decoders</text>
+  <text x="450" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="bold" fill="#FBEB24">&#215;8</text>
+
+  <!-- Arrow crossing boundary -->
+  <line x1="489" y1="90" x2="520" y2="90" stroke="#FBEB24" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+
+  <!-- Async FIFO (straddles boundary) -->
+  <rect x="523" y="68" width="62" height="44" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.2"/>
+  <text x="554" y="86" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Async</text>
+  <text x="554" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">FIFO</text>
+
+  <!-- Arrow -->
+  <line x1="588" y1="90" x2="601" y2="90" stroke="#A3E835" stroke-width="1.5" marker-end="url(#arrowLime)"/>
+
+  <!-- AXI Regs -->
+  <rect x="604" y="72" width="58" height="36" rx="4" fill="#525252" stroke="#A3E835" stroke-width="1.2"/>
+  <text x="633" y="88" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">AXI</text>
+  <text x="633" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Regs</text>
+
+  <!-- Arrow -->
+  <line x1="665" y1="90" x2="678" y2="90" stroke="#A3E835" stroke-width="1.5" marker-end="url(#arrowLime)"/>
+
+  <!-- plane-feeder -->
+  <rect x="681" y="68" width="68" height="44" rx="4" fill="#525252" stroke="#A3E835" stroke-width="1.2"/>
+  <text x="715" y="86" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">plane-</text>
+  <text x="715" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">feeder</text>
+
+  <!-- Arrow -->
+  <line x1="752" y1="90" x2="765" y2="90" stroke="#A3E835" stroke-width="1.5" marker-end="url(#arrowLime)"/>
+
+  <!-- Beast TCP -->
+  <rect x="768" y="72" width="55" height="36" rx="4" fill="#525252" stroke="#A3E835" stroke-width="1.2"/>
+  <text x="795" y="86" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Beast TCP</text>
+  <text x="795" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" font-weight="bold" fill="#A3E835">:30005</text>
+
+  <!-- GNSS / PPS / Timestamp row -->
+  <text x="68" y="160" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">GNSS</text>
+  <line x1="96" y1="157" x2="120" y2="157" stroke="#FBEB24" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowGold)"/>
+
+  <rect x="123" y="145" width="40" height="24" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="143" y="161" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">PPS</text>
+
+  <line x1="166" y1="157" x2="200" y2="157" stroke="#FBEB24" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowGold)"/>
+
+  <rect x="203" y="140" width="85" height="34" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="245" y="156" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Timestamp</text>
+  <text x="245" y="168" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Counter</text>
+
+  <!-- Dashed line from timestamp to preamble detector -->
+  <line x1="288" y1="150" x2="359" y2="112" stroke="#FBEB24" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrowGold)"/>
+
+  <!-- Downstream consumers -->
+  <text x="715" y="140" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">&#8595;</text>
+  <text x="715" y="158" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">readsb / tar1090 / plane.watch</text>
+
+  <!-- Legend -->
+  <line x1="30" y1="210" x2="55" y2="210" stroke="#FBEB24" stroke-width="2"/>
+  <text x="60" y="214" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">Signal path</text>
+
+  <line x1="160" y1="210" x2="185" y2="210" stroke="#A3E835" stroke-width="2"/>
+  <text x="190" y="214" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">Control / readout</text>
+
+  <line x1="310" y1="210" x2="335" y2="210" stroke="#FBEB24" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="340" y="214" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">Timing / PPS</text>
+
+  <!-- Arrowhead markers -->
+  <defs>
+    <marker id="arrowGold" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#FBEB24"/>
+    </marker>
+    <marker id="arrowLime" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#A3E835"/>
+    </marker>
+  </defs>
+</svg>

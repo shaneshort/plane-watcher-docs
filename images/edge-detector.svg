@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250">
+  <rect width="600" height="250" fill="#262626"/>
+
+  <!-- Top section: Rising edge detection -->
+  <text x="300" y="25" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FDE6A0">Rising Edge Detection (Sliding Window)</text>
+
+  <!-- Power waveform with rising edge -->
+  <path d="M 40,110 L 80,108 L 120,105 L 160,95 L 200,70 L 240,45 L 280,40 L 320,42 L 360,50 L 400,65 L 440,80 L 480,90 L 520,95 L 560,98" fill="none" stroke="#FBEB24" stroke-width="2" opacity="0.5"/>
+
+  <!-- Highlight the 3-sample sliding window -->
+  <circle cx="200" cy="70" r="6" fill="none" stroke="#FDE6A0" stroke-width="1.5" opacity="0.7"/>
+  <text x="200" y="62" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">left</text>
+
+  <circle cx="240" cy="45" r="7" fill="#FBEB24" stroke="#FBEB24" stroke-width="2" opacity="0.9"/>
+  <text x="240" y="37" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" font-weight="bold" fill="#FBEB24">center</text>
+
+  <circle cx="280" cy="40" r="6" fill="none" stroke="#FDE6A0" stroke-width="1.5" opacity="0.7"/>
+  <text x="280" y="32" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">right</text>
+
+  <!-- Bracket around window -->
+  <path d="M 192,80 L 192,85 L 288,85 L 288,80" fill="none" stroke="#A3E835" stroke-width="1"/>
+
+  <!-- Annotation -->
+  <text x="350" y="48" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">center &gt; left AND center &gt; right</text>
+  <text x="350" y="63" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">&#8594; rising edge detected</text>
+
+  <!-- Divider -->
+  <line x1="30" y1="125" x2="570" y2="125" stroke="#404040" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Bottom section: Shape qualification -->
+  <text x="300" y="148" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FDE6A0">Shape Qualification (5-sample window)</text>
+
+  <!-- 5 dots all above threshold -->
+  <circle cx="180" cy="175" r="6" fill="#FBEB24"/>
+  <circle cx="230" cy="170" r="6" fill="#FBEB24"/>
+  <circle cx="280" cy="165" r="6" fill="#FBEB24"/>
+  <circle cx="330" cy="168" r="6" fill="#FBEB24"/>
+  <circle cx="380" cy="173" r="6" fill="#FBEB24"/>
+
+  <!-- Threshold line -->
+  <line x1="150" y1="195" x2="410" y2="195" stroke="#A3E835" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="425" y="199" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#A3E835">threshold</text>
+
+  <!-- Check marks above dots -->
+  <text x="180" y="162" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">&#10003;</text>
+  <text x="230" y="157" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">&#10003;</text>
+  <text x="280" y="152" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">&#10003;</text>
+  <text x="330" y="155" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">&#10003;</text>
+  <text x="380" y="160" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#A3E835">&#10003;</text>
+
+  <text x="300" y="230" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">All 5 samples must exceed threshold to qualify as a valid edge</text>
+</svg>

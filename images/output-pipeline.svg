@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="250" viewBox="0 0 750 250">
+  <rect width="750" height="250" fill="#262626"/>
+
+  <defs>
+    <marker id="arrowGoldOut" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#FBEB24"/>
+    </marker>
+    <marker id="arrowLimeOut" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#A3E835"/>
+    </marker>
+    <marker id="arrowMutedOut" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#FDE6A0"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="375" y="20" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FDE6A0">Output Pipeline: Decoders to Network</text>
+
+  <!-- 8 decoder slots stacked vertically on left -->
+  <rect x="20" y="35" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="50" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 0</text>
+
+  <rect x="20" y="60" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="75" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 1</text>
+
+  <rect x="20" y="85" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="100" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 2</text>
+
+  <rect x="20" y="110" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="125" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 3</text>
+
+  <rect x="20" y="135" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="150" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 4</text>
+
+  <rect x="20" y="160" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="175" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 5</text>
+
+  <rect x="20" y="185" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="200" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 6</text>
+
+  <rect x="20" y="210" width="48" height="22" rx="3" fill="#525252" stroke="#FBEB24" stroke-width="1"/>
+  <text x="44" y="225" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0">Dec 7</text>
+
+  <!-- Converging arrows from decoders to aggregator -->
+  <line x1="70" y1="46" x2="105" y2="120" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+  <line x1="70" y1="71" x2="105" y2="120" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+  <line x1="70" y1="96" x2="105" y2="120" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+  <line x1="70" y1="121" x2="105" y2="125" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+  <line x1="70" y1="146" x2="105" y2="130" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+  <line x1="70" y1="171" x2="105" y2="135" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+  <line x1="70" y1="196" x2="105" y2="138" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+  <line x1="70" y1="221" x2="105" y2="140" stroke="#FBEB24" stroke-width="1" opacity="0.5"/>
+
+  <!-- Message Aggregator -->
+  <rect x="108" y="105" width="85" height="44" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.5"/>
+  <text x="150" y="123" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">Message</text>
+  <text x="150" y="138" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">Aggregator</text>
+  <text x="150" y="160" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#FBEB24" opacity="0.7">round-robin</text>
+
+  <!-- Arrow to Async FIFO -->
+  <line x1="196" y1="127" x2="228" y2="127" stroke="#FBEB24" stroke-width="1.5" marker-end="url(#arrowGoldOut)"/>
+
+  <!-- Async FIFO -->
+  <rect x="232" y="105" width="72" height="44" rx="4" fill="#525252" stroke="#FBEB24" stroke-width="1.5"/>
+  <text x="268" y="123" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">Async</text>
+  <text x="268" y="138" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">FIFO</text>
+  <text x="268" y="160" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#FBEB24" opacity="0.7">CDC bridge</text>
+
+  <!-- Clock domain boundary -->
+  <line x1="320" y1="30" x2="320" y2="240" stroke="#FDE6A0" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.5"/>
+  <text x="320" y="245" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0" opacity="0.6">clock domain boundary</text>
+
+  <!-- Arrow crossing boundary -->
+  <line x1="307" y1="127" x2="342" y2="127" stroke="#FDE6A0" stroke-width="1.5" marker-end="url(#arrowMutedOut)"/>
+
+  <!-- AXI Regs -->
+  <rect x="346" y="105" width="68" height="44" rx="4" fill="#525252" stroke="#A3E835" stroke-width="1.5"/>
+  <text x="380" y="123" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">AXI Regs</text>
+  <text x="380" y="138" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0" opacity="0.7">register map</text>
+
+  <!-- Arrow -->
+  <line x1="417" y1="127" x2="442" y2="127" stroke="#A3E835" stroke-width="1.5" marker-end="url(#arrowLimeOut)"/>
+
+  <!-- plane-feeder -->
+  <rect x="446" y="105" width="76" height="44" rx="4" fill="#525252" stroke="#A3E835" stroke-width="1.5"/>
+  <text x="484" y="123" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">plane-feeder</text>
+  <text x="484" y="138" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0" opacity="0.7">Go binary</text>
+
+  <!-- Arrow -->
+  <line x1="525" y1="127" x2="550" y2="127" stroke="#A3E835" stroke-width="1.5" marker-end="url(#arrowLimeOut)"/>
+
+  <!-- Beast TCP -->
+  <rect x="554" y="105" width="68" height="44" rx="4" fill="#525252" stroke="#A3E835" stroke-width="1.5"/>
+  <text x="588" y="123" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">Beast TCP</text>
+  <text x="588" y="138" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-weight="bold" fill="#A3E835">:30005</text>
+
+  <!-- Arrow to cloud -->
+  <line x1="625" y1="127" x2="650" y2="127" stroke="#A3E835" stroke-width="1.5" marker-end="url(#arrowLimeOut)"/>
+
+  <!-- Cloud / network label -->
+  <rect x="654" y="108" width="85" height="38" rx="8" fill="#404040" stroke="#FDE6A0" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="696" y="122" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#FDE6A0">readsb / tar1090</text>
+  <text x="696" y="136" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="8" fill="#FDE6A0">plane.watch</text>
+
+  <!-- Region labels -->
+  <text x="170" y="45" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FBEB24" opacity="0.6">FPGA (PL)</text>
+  <rect x="100" y="33" width="140" height="16" rx="3" fill="none" stroke="#FBEB24" stroke-width="0.5" stroke-dasharray="4,3" opacity="0.3"/>
+
+  <text x="510" y="45" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#A3E835" opacity="0.6">Linux (PS)</text>
+  <rect x="440" y="33" width="140" height="16" rx="3" fill="none" stroke="#A3E835" stroke-width="0.5" stroke-dasharray="4,3" opacity="0.3"/>
+</svg>

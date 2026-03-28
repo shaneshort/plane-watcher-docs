@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#262626"/>
+
+  <!-- Aircraft (gold triangle) at top center -->
+  <polygon points="300,50 285,90 315,90" fill="#FBEB24" stroke="#FBEB24" stroke-width="1"/>
+  <text x="300" y="110" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" fill="#FDE6A0">Aircraft</text>
+
+  <!-- Ground receivers (lime rectangles) -->
+  <rect x="70" y="300" width="40" height="25" rx="3" fill="#A3E835" stroke="#A3E835" stroke-width="1"/>
+  <text x="90" y="345" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">Rx 1</text>
+
+  <rect x="280" y="300" width="40" height="25" rx="3" fill="#A3E835" stroke="#A3E835" stroke-width="1"/>
+  <text x="300" y="345" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">Rx 2</text>
+
+  <rect x="490" y="300" width="40" height="25" rx="3" fill="#A3E835" stroke="#A3E835" stroke-width="1"/>
+  <text x="510" y="345" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" fill="#FDE6A0">Rx 3</text>
+
+  <!-- Dashed lines from aircraft to receivers -->
+  <line x1="293" y1="90" x2="90" y2="300" stroke="#FBEB24" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.7"/>
+  <line x1="300" y1="90" x2="300" y2="300" stroke="#FBEB24" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.7"/>
+  <line x1="307" y1="90" x2="510" y2="300" stroke="#FBEB24" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.7"/>
+
+  <!-- Delta-t labels -->
+  <text x="155" y="280" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="bold" fill="#A3E835">&#916;t&#8321;&#8322;</text>
+  <line x1="120" y1="285" x2="200" y2="285" stroke="#A3E835" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <text x="440" y="280" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="bold" fill="#A3E835">&#916;t&#8322;&#8323;</text>
+  <line x1="400" y1="285" x2="480" y2="285" stroke="#A3E835" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Caption -->
+  <text x="300" y="385" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-style="italic" fill="#FDE6A0">Different distances &#8594; different arrival times &#8594; position fix</text>
+</svg>

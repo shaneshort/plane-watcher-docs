@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250">
+  <rect width="600" height="250" fill="#262626"/>
+
+  <!-- Title -->
+  <text x="300" y="22" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FDE6A0">Peak Detection + Message Holdoff</text>
+
+  <!-- Time axis -->
+  <line x1="40" y1="185" x2="570" y2="185" stroke="#FDE6A0" stroke-width="1"/>
+  <text x="570" y="200" text-anchor="end" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">time &#8594;</text>
+
+  <!-- RPL bell curve (gold) -->
+  <path d="M 50,180 C 60,178 70,175 90,170 C 110,160 130,140 150,115 C 170,85 185,55 210,40 C 225,33 240,33 255,40 C 270,50 285,75 300,105 C 320,140 340,165 370,175 C 390,180 420,182 450,183 C 480,184 520,184 560,185" fill="none" stroke="#FBEB24" stroke-width="2.5"/>
+
+  <!-- Peak vertical dashed line -->
+  <line x1="240" y1="33" x2="240" y2="185" stroke="#A3E835" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- FIRE label at peak -->
+  <rect x="208" y="24" width="64" height="18" rx="3" fill="#A3E835" opacity="0.2"/>
+  <text x="240" y="37" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#A3E835">FIRE</text>
+  <text x="240" y="17" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#A3E835">preamble detected</text>
+
+  <!-- Left of peak annotation -->
+  <text x="130" y="80" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">RPL rising &#8594; wait</text>
+
+  <!-- Holdoff region (shaded rectangle) -->
+  <rect x="240" y="40" width="320" height="145" fill="#525252" opacity="0.2" rx="3"/>
+  <text x="400" y="95" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FDE6A0">Holdoff: 2240 samples (140 &#181;s)</text>
+  <text x="400" y="115" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0" opacity="0.7">No new triggers accepted during this window</text>
+
+  <!-- Holdoff bracket -->
+  <line x1="240" y1="160" x2="560" y2="160" stroke="#FDE6A0" stroke-width="1" opacity="0.5"/>
+  <line x1="240" y1="155" x2="240" y2="165" stroke="#FDE6A0" stroke-width="1" opacity="0.5"/>
+  <line x1="560" y1="155" x2="560" y2="165" stroke="#FDE6A0" stroke-width="1" opacity="0.5"/>
+
+  <!-- Bottom annotation -->
+  <text x="300" y="218" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">Without peak detection: dozens of triggers per message.</text>
+  <text x="300" y="236" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#A3E835">With it: exactly one.</text>
+</svg>

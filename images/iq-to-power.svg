@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300">
+  <rect width="700" height="300" fill="#262626"/>
+
+  <!-- Panel separators -->
+  <line x1="233" y1="15" x2="233" y2="270" stroke="#404040" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="466" y1="15" x2="466" y2="270" stroke="#404040" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Panel 1: What comes in -->
+  <text x="116" y="30" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FDE6A0">What comes in</text>
+
+  <!-- I waveform (gold sine) -->
+  <path d="M 20,120 C 30,80 50,80 60,120 C 70,160 90,160 100,120 C 110,80 130,80 140,120 C 150,160 170,160 180,120 C 190,80 205,80 215,120" fill="none" stroke="#FBEB24" stroke-width="2"/>
+  <text x="220" y="115" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#FBEB24">I</text>
+
+  <!-- Q waveform (lime sine, 90 deg offset) -->
+  <path d="M 20,150 C 30,150 40,110 50,110 C 60,110 70,150 80,190 C 90,190 100,150 110,150 C 120,110 140,110 150,150 C 160,190 170,190 180,150 C 190,150 200,120 215,110" fill="none" stroke="#A3E835" stroke-width="2"/>
+  <text x="220" y="148" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#A3E835">Q</text>
+
+  <text x="116" y="230" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">Two measurements, 90&#176; apart</text>
+
+  <!-- Panel 2: The math -->
+  <text x="350" y="30" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FDE6A0">The math</text>
+
+  <!-- Equation -->
+  <text x="350" y="65" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="bold" fill="#FBEB24">Power = |I| + |Q|</text>
+
+  <!-- Right triangle -->
+  <line x1="290" y1="170" x2="410" y2="170" stroke="#FBEB24" stroke-width="2"/>
+  <line x1="410" y1="170" x2="410" y2="100" stroke="#A3E835" stroke-width="2"/>
+  <line x1="290" y1="170" x2="410" y2="100" stroke="#FDE6A0" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Right angle indicator -->
+  <polyline points="398,170 398,158 410,158" fill="none" stroke="#404040" stroke-width="1"/>
+
+  <!-- Labels -->
+  <text x="350" y="188" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FBEB24">I</text>
+  <text x="422" y="140" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#A3E835">Q</text>
+  <text x="338" y="128" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0" opacity="0.7">&#8730;(I&#178;+Q&#178;)</text>
+
+  <text x="350" y="215" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">We skip &#8730; &#8212; only need</text>
+  <text x="350" y="230" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0">relative magnitude (Manhattan)</text>
+  <text x="350" y="252" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#FDE6A0" opacity="0.7">3-stage pipeline: register &#8594; abs &#8594; sum</text>
+
+  <!-- Panel 3: What comes out -->
+  <text x="583" y="30" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FDE6A0">What comes out</text>
+
+  <!-- Power envelope (always positive, smooth) -->
+  <path d="M 478,180 C 490,175 498,100 510,85 C 522,70 530,75 540,100 C 548,120 555,160 565,170 C 575,178 580,178 590,165 C 598,150 605,90 615,75 C 625,60 635,70 645,100 C 655,130 665,165 675,175 C 680,178 685,178 690,175" fill="none" stroke="#FBEB24" stroke-width="2.5"/>
+  <!-- Zero baseline -->
+  <line x1="475" y1="185" x2="695" y2="185" stroke="#404040" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="700" y="189" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#404040">0</text>
+
+  <text x="583" y="230" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">Signal power (always &#8805; 0)</text>
+
+  <!-- Bottom annotation -->
+  <text x="350" y="288" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" font-style="italic" fill="#FDE6A0" opacity="0.7">Manhattan magnitude: fast, uses only addition &#8212; no multipliers needed in FPGA</text>
+</svg>

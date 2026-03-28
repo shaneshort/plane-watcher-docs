@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="150" viewBox="0 0 600 150">
+  <rect width="600" height="150" fill="#262626"/>
+
+  <!-- Total label above -->
+  <text x="300" y="20" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="bold" fill="#FDE6A0">Beast Timestamp: 48 bits at 12 MHz</text>
+
+  <!-- Main rectangle container -->
+  <rect x="50" y="35" width="500" height="50" rx="5" fill="none" stroke="#FDE6A0" stroke-width="1.5"/>
+
+  <!-- Left section: 18 bits - seconds -->
+  <rect x="50" y="35" width="188" height="50" rx="5" fill="#FBEB24" opacity="0.15" stroke="#FBEB24" stroke-width="1.5"/>
+  <!-- Fix left corners by overlaying right-side fill -->
+  <rect x="233" y="35" width="5" height="50" fill="#262626"/>
+  <rect x="238" y="35" width="312" height="50" rx="0" fill="#A3E835" opacity="0.12"/>
+  <!-- Re-draw right rounded section -->
+  <rect x="238" y="35" width="312" height="50" rx="5" fill="#A3E835" opacity="0.12" stroke="#A3E835" stroke-width="1.5"/>
+  <!-- Outer border -->
+  <rect x="50" y="35" width="500" height="50" rx="5" fill="none" stroke="#FDE6A0" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Divider line -->
+  <line x1="238" y1="35" x2="238" y2="85" stroke="#FDE6A0" stroke-width="1"/>
+
+  <!-- Left section text -->
+  <text x="144" y="57" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#FBEB24">18 bits</text>
+  <text x="144" y="75" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">Seconds since midnight</text>
+
+  <!-- Right section text -->
+  <text x="394" y="57" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="bold" fill="#A3E835">30 bits</text>
+  <text x="394" y="75" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FDE6A0">Nanosecond fraction</text>
+
+  <!-- Labels below sections -->
+  <text x="144" y="105" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0" opacity="0.7">from NTP (software)</text>
+  <text x="394" y="105" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#FDE6A0" opacity="0.7">from hardware counter</text>
+
+  <!-- Formula below -->
+  <text x="300" y="128" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="11" fill="#FBEB24">hardware_counter &#215; 3 &#247; 25 &#8594; 12 MHz equivalent</text>
+
+  <!-- Note -->
+  <text x="300" y="145" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" font-style="italic" fill="#FDE6A0" opacity="0.6">Beast protocol uses 12 MHz by industry convention</text>
+</svg>
